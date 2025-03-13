@@ -88,7 +88,7 @@ body {
     justify-content: center;
     padding: 6rem 2rem 2rem;
     background: linear-gradient(rgba(18, 19, 28, 0.8), rgba(62, 14, 41, 0.8)),
-                url('/assets/caverna.png') center/cover no-repeat;
+                url('assets/caverna.png') center/cover no-repeat;
 }
 
 .hero-content {
@@ -218,7 +218,7 @@ body {
 .team {
     padding: 4rem 2rem;
     background: linear-gradient(rgba(18, 19, 28, 0.8), rgba(62, 14, 41, 0.8)),
-                url('/assets/caverna.png') center/cover no-repeat;
+                url('assets/caverna.png') center/cover no-repeat;
 }
 
 .link-youtuber {
