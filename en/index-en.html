@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Back on Track</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="/assets/fav-ico.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="/assets/fav-ico.png" alt="Create Back on Track">
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#download">Download</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#team">Team</a></li>
+            </ul>
+
+            <div class="language-selector" id="language-selector">
+                <select id="language-select">
+                <option value="en" selected>English</option>
+                <option value="pt">Português</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="download" class="hero">
+            <div class="hero-content">
+                <img src="/assets/Logo-CTB.PNG" alt="Create Back on Track Art" class="hero-art">
+                <div class="cta-buttons">
+                    <a href="https://www.curseforge.com/minecraft/modpacks/create-back-on-track" class="cta-button curseforge">
+                        <i class="fas fa-download"></i> Download on CurseForge
+                    </a>
+                    <a href="#" class="cta-button modrinth">
+                        <i class="fas fa-download"></i> Download on Modrinth
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="gallery-discord-container">
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                            <img src="/assets/caverna.png" alt="Caverna">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/assets/paisagem.png" alt="Paisagem">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/assets/paisagem2.png" alt="Paisagem2">
+                        </div>
+                    </div>
+                    <button class="carousel-button prev">❮</button>
+                    <button class="carousel-button next">❯</button>
+                </div>
+                <div class="discord-widget">
+                    <iframe src="https://discord.com/widget?id=921850361076137985&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team">
+            <div class="tabs">
+                <button class="tab-button active" data-tab="content-creators">Content Creator</button>
+                <button class="tab-button" data-tab="developers">Developers</button>
+                <button class="tab-button" data-tab="website">Website</button>
+            </div>
+
+            <div class="tab-content" id="developers">
+                <div class="team-grid">
+                    <!-- Adicione membros do time aqui -->
+                    <div class="team-member">
+                        <img src="/assets/developers/titan.png" alt="Developer 1">
+                        <h3><a href="https://www.curseforge.com/members/titammods/projects" class="link-youtuber" target="_blank">titammods</a></h3>
+                        <p>Lead Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="/assets/developers/reeds.png" alt="Developer 1">
+                        <h3><a href="https://www.curseforge.com/members/terentre4e25caracteres/projects" class="link-youtuber" target="_blank">terentre4e25caracteres</a></h3>
+                        <p>Developer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="website">
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="/assets/developers/odevfred.jpg" alt="Website Developer">
+                        <h3><a href="https://odevfred.github.io/portifolio/" class="link-youtuber" target="_blank">oDevFred</a></h3>
+                        <p>Website Developer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content active" id="content-creators">
+                <div class="team-grid">
+                    <!-- Adicione criadores de conteúdo aqui -->
+                    <div class="team-member">
+                        <img src="/assets/creators/danrique.webp" alt="Content Creator 1">
+                        <h3><a href="https://www.youtube.com/@Danrique" class="link-youtuber" target="_blank">Danrique</a></h3>
+                        <p>Youtuber</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="/assets/creators/mitinho.jpg" alt="Content Creator 1">
+                        <h3><a href="https://www.youtube.com/@MitinhoPlayer" class="link-youtuber" target="_blank">MitinhoPlayer</a></h3>
+                        <p>YouTuber</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="/assets/creators/nofaxu.jpg" alt="Content Creator 1">
+                        <h3><a href="https://www.youtube.com/@Nofaxu" class="link-youtuber" target="_blank">Nofaxu</a></h3>
+                        <p>YouTuber</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#download">Download</a>
+                <a href="#gallery">Galeria</a>
+                <a href="#team">Team</a>
+            </div>
+            <p class="footer-text">Create Back on Track © All rights reserved - Made with ❤️ by oDevFred</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/JS/main.js"></script>
+</body>
+</html>

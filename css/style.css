@@ -1,0 +1,425 @@
+:root {
+    --yellow: #FEF290;
+    --orange: #F88D61;
+    --orange-curse: #FF784D;
+    --dark: #12131C;
+    --gray: #474342;
+    --burgundy: #3E0E29;
+    --green-modrinth: #1BD96A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--dark);
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(18, 19, 28, 0.95);
+    z-index: 1000;
+    padding: 1rem 0;
+    backdrop-filter: blur(10px);
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--orange);
+}
+
+.language-selector {
+    margin-left: 1rem;
+}
+
+.language-selector select {
+    background-color: var(--dark);
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+    padding: 0.5rem;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: var(--yellow);
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem 2rem;
+    background: linear-gradient(rgba(18, 19, 28, 0.8), rgba(62, 14, 41, 0.8)),
+                url('/assets/caverna.png') center/cover no-repeat;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-art {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+}
+
+.curseforge {
+    background-color: var(--orange-curse);
+    color: white;
+}
+
+.modrinth {
+    background-color: var(--green-modrinth);
+    color: var(--dark);
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 4rem 2rem;
+    background-color: var(--gray);
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--yellow);
+}
+
+.gallery-discord-container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.carousel {
+    position: relative;
+    flex: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--yellow);
+}
+
+.carousel-button:hover {
+    color: var(--orange);
+}
+
+.prev {
+    left: 1rem;
+}
+
+.next {
+    right: 1rem;
+}
+
+.discord-widget {
+    flex: 0 0 350px;
+    background: rgba(18, 19, 28, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.discord-widget iframe {
+    border-radius: 8px;
+    width: 100%;
+    height: 500px;
+}
+
+/* Team Section */
+.team {
+    padding: 4rem 2rem;
+    background: linear-gradient(rgba(18, 19, 28, 0.8), rgba(62, 14, 41, 0.8)),
+                url('/assets/caverna.png') center/cover no-repeat;
+}
+
+.link-youtuber {
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.link-youtuber:hover {
+    color: var(--orange);
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(rgba(18, 19, 28, 0.8), rgba(62, 14, 41, 0.8)),
+}
+
+.tab-button {
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.tab-button.active,
+.tab-button:hover {
+    background-color: var(--yellow);
+    color: var(--dark);
+}
+
+.tab-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tab-content.active {
+    display: block;
+    opacity: 1;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid var(--yellow);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark);
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: var(--yellow);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--orange);
+}
+
+.footer-text {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--yellow);
+    color: var(--dark);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+}
+
+#back-to-top:hover {
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .gallery-discord-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .discord-widget {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: rgba(18, 19, 28, 0.95);
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        transition: right 0.3s ease;
+    }
+
+    /* Quando o menu estiver ativo, o seletor já estará no final da lista */
+    .nav-links .language-selector {
+        margin-top: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .carousel-button {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-text {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: #fff;
+    }
+    
+}
