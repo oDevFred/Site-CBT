@@ -66,20 +66,6 @@ body {
     color: var(--orange);
 }
 
-.language-selector {
-    margin-left: 1rem;
-}
-
-.language-selector select {
-    background-color: var(--dark);
-    color: var(--yellow);
-    border: 1px solid var(--yellow);
-    padding: 0.5rem;
-    border-radius: 5px;
-    outline: none;
-    font-size: 1rem;
-}
-
 .hamburger {
     display: none;
     flex-direction: column;
@@ -384,13 +370,6 @@ footer {
         align-items: center;
         padding: 2rem;
         transition: right 0.3s ease;
-    }
-
-    /* Quando o menu estiver ativo, o seletor já estará no final da lista */
-    .nav-links .language-selector {
-        margin-top: auto;
-        width: 100%;
-        text-align: center;
     }
 
     .nav-links.active {

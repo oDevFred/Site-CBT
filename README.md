@@ -32,7 +32,7 @@ Acesse o site em: [GitHub Pages](https://seulinkdopagina.github.io/)
 Não é necessário instalar nada! Para rodar o site localmente:  
 1. Baixe ou clone o repositório:  
     ```bash
-    git clone https://github.com/seuusuario/seurepositorio.git
+    git clone https://github.com/oDevFred/Site-CBT
     ```
 2. Abra qualquer arquivo `index.html` diretamente no navegador. O site já detecta automaticamente o idioma.  
 
