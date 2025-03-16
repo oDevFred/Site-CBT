@@ -88,7 +88,7 @@ body {
     justify-content: center;
     padding: 6rem 2rem 2rem;
     background: linear-gradient(rgba(18, 19, 28, 0.8), rgba(62, 14, 41, 0.8)),
-                url('https://cdn.discordapp.com/attachments/1348394341499928576/1348494232876486766/image.png?ex=67d447de&is=67d2f65e&hm=402db009f0dd7196ee51094dff313fbdb1b042fef4c0bc0cb93ccabea8d243ea&') center/cover no-repeat;
+                url('/assets/caverna.png') center/cover no-repeat;
 }
 
 .hero-content {
@@ -218,7 +218,7 @@ body {
 .team {
     padding: 4rem 2rem;
     background: linear-gradient(rgba(18, 19, 28, 0.8), rgba(62, 14, 41, 0.8)),
-                url('https://cdn.discordapp.com/attachments/1348394341499928576/1348494232876486766/image.png?ex=67d447de&is=67d2f65e&hm=402db009f0dd7196ee51094dff313fbdb1b042fef4c0bc0cb93ccabea8d243ea&') center/cover no-repeat;
+                url('/assets/caverna.png') center/cover no-repeat;
 }
 
 .link-youtuber {
